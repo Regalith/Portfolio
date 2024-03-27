@@ -1,0 +1,15 @@
+.toolset{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:90%;
+	padding: 0px 0px;
+	color: black;
+}
+
+.toolsetName{
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	font-size: 50px;
+	color: black;
+}

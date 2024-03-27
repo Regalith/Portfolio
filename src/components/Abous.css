@@ -1,0 +1,22 @@
+.about{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	padding: 100px 20px;
+}
+
+.aboutTitle{
+	text-align: center;
+	font-size: 60px;
+}
+
+.profilePicture{
+	width: 240px;
+	height: 358px;
+}
+
+.aboutText{
+	padding: 50px;
+	max-width: 900px;
+}

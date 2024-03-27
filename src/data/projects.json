@@ -1,0 +1,104 @@
+{
+	"projects": [
+	{
+		"projectName": "Villians Con Minion Blast",
+		"mediaType": "youtube",
+		"mediaLink": "https://www.youtube.com/embed/Blnu761johU",
+		"work": [
+			"Built a system for synconizing player reticle and shot data as nDisplay events across all connected nDisplay nodes",
+			"Helped solve the myriad of gameplay bugs existing in the project when I joined",
+			"Set up a functional testing framework plugin that would have been far more useful before they started development",
+			"Created a system to deproject from real world screen space to 3D world space that took into account the nDisplay vertex shaders and phyically curved screens",
+			"Built tools to tune this deprojection on site given that there was a disconnect between real world measurements and the 3D representation in game"
+		]
+	},
+	{
+		"projectName": "Volkanu - Quest for the Golden Idol",
+		"mediaType": "youtube",
+		"mediaLink": "https://www.youtube.com/embed/bCnmnRrbVYs",
+		"work": [
+			"Wrote the underlying framework that the game was built upon along with a decent amount of integration and gameplay",
+			"Created a system using nDisplay to handle off-axis projection of the cameras entirely inside nDisplay",
+			"Synced up the disconnect between nDisplay's rendering output and needed engine functions that were still using the unmodified camera data",
+			"Setup nDisplay configs to load from files to allow for camera tuning on site",
+			"Converted the Alterface module I wrote to an Unreal Plugin to make it easier to move between projects",
+			"Built a hierarchy of sound classes that could be dynamically modified live on site for sound balancing via an in-game menu and json files",
+			"Created vertex shader to simulate roiling lava in scenes",
+			"Wrote the jankiest version of pathfinding for flying enemies to navigate through scenes dynamically"
+		]
+	},
+	{
+		"projectName": "JUSTICE LEAGUE: Battle for Metropolis",
+		"mediaType": "youtube",
+		"mediaLink": "https://www.youtube.com/embed/2SfJigL2Pfs",
+		"work": [
+			"Implemented off-axis matrix projection via a source build driven by data exported from a recreation of the ride track in Maya",
+			"General asset implementation and gameplay programming",
+			"Built a system to allow for dynamically updating audio properties like pitch and volume dynamically to be tuned on site",
+			"Build a system to interface with Alterface's ride control system such as shooting and show control",
+			"Developed a system for dynamically scaling real world projection onto a moving projection screen"
+		]
+	},
+	{
+		"projectName": "Reese's Cupfusion",
+		"mediaType": "youtube",
+		"mediaLink": "https://www.youtube.com/embed/xvegQc7lIeM",
+		"work": [
+			"Developed all gameplay and integrated all art assets and animations except for materials",
+			"Tested out Nvidia-Flex for fluid simulation",
+			"Couldn’t get around memory leakage tied to it after 5 hours of continuous gameplay with Flex, so had to switch to getting creative with skinned and animated meshes",
+			"Updated the Alterface module I wrote for Unreal 4.20",
+			"Installed on site and tuned everything there"
+		]
+	},
+	{
+		"projectName": "Critter Cam",
+		"mediaType": "text",
+		"mediaLink": "Critter Cam was an interactive  exhibit where kids could talk and interact with a Panda being displayed on a large screen. A puppeteer would wear a Dynamixyz face tracking headset that would drive blendshapes on the panda’s face to allow the panda to talk and match facial expressions of the puppeteer. A live camera feed of the room where the exhibit was in was displayed along with a large amount of movement controls to allow the puppeteer to interact directly with the people watching the screen.",
+		"work": [
+			"Integrated Dynamixyz face tracking into Unreal Engine",
+			"Created a pipeline for building realtime facial mocap rigs for skeletal meshes in Maya to be calibrated and imported into Unreal",
+			"Set up a nVidia Hairworks system for Panda fur simulation from Maya to Unreal",
+			"Changed Unreal's default rendering behavior to only render on the right half of the screen to allow for dedicated UI panel",
+			"Built a system to package an external camera feed, external BrightSign controls, and all Puppeting controls into a single Unreal application",
+			"Traveled to Zhuhai for two weeks to train a team on building the realtime mocap profiles and puppeteering of the panda"
+		]
+	},
+	{
+		"projectName": "CMI Wonder Woman",
+		"mediaType": "video",
+		"mediaLink": "/vides/WonderWoman.mp4",
+		"work": [
+			"Built a system to track human arms via a steroscopic camera ",
+			"Used said system to drive where miming blocking projectiles with your wrists and throwing a lasso would be mirrored in game",
+			"Integrated all art assets, built all gameplay logic and built animation blueprints from raw animation data"
+		]
+	},
+	{
+		"projectName": "CMI Dinosphere",
+		"mediaType": "image",
+		"mediaLink": "images/Dinosphere.png",
+		"work": [
+			"Build a system for scanning images to be applied to 2D animated dinosaur sprites in Unity",
+			"Said system would:",
+			"Spin up an image processing thread outside of Unity",
+			"Find QR codes in the image to figure out the bounds of the drawing using the QR Codes as anchors",
+			"Determine what kind of dinosaur it is by reading the QR Code",
+			"Apply said pieces of the image onto the texture of a ToonBoom animation dinosaur sprite",
+			"Would pass this updated texture back to Unity through a C# anonymous function",
+			"Wrote the logic for all dinosaur behavior and the system for capping the number of dinosaurs being shown at any given time"
+		]
+	},
+	{
+		"projectName": "Plants vs. Zombies Garden Warfare: 3Z Arena",
+		"mediaType": "youtube",
+		"mediaLink": "https://www.youtube.com/embed/7mmuGZfO6NA",
+		"work": [
+			"Worked on general gameplay programming",
+			"Helped build the level streaming setup for moving through large maps",
+			"Art integration like developing animation blueprints for actors",
+			"Wrote the easter eggs that could be triggered throughout the ride"
+		]
+	}
+	]
+}

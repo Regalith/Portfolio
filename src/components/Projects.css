@@ -1,0 +1,13 @@
+.projects{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	padding: 100px 20px;
+}
+
+.projectsTitle{
+	padding: 30px 20px;
+	text-align: center;
+	font-size: 60px;
+}

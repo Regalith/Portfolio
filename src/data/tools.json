@@ -1,0 +1,78 @@
+{
+	"tools": [
+	{
+		"toolName": "Unreal Engine",
+		"work": [
+			"Broad knowledge of the inner workings of the engine source code and modifying it when needed",
+			"Years experience writing gameplay code and integrating art assets on every level",
+			"Integrating third party static and dynamic libraries as Unreal modules or plugins",
+			"Extending the editor to add custom UI tools",
+			"Modifying how Unreal handles rendering (nDisplay makes this far easier than years past)",
+			"Accidentally reinventing the wheel because I don't know a certain feature mostly already exists in the engine"
+		]
+	},
+	{
+		"toolName": "Unity",
+		"work": [
+			"General gameplay development and integration knowledge (A little dated though since I mostly used Unity 4)",
+			"Experience moving computation heavy processess off the gamethread to run in parallel",
+			"Rapid prototyping"
+		]
+	},
+	{
+		"toolName": "Maya",
+		"work": [
+			"Above average programmer art (If it's inorganic)",
+			"Developed tools for modifying meshes, UV's, fixing rigs, exporting, ect. with Maya's python API and PyMel",
+			"Built custom plugins and python modules to run inside Maya",
+			"Created a plugin to 'Legoize' mocap animation data automatically",
+			"Developed an Atlas tool to bake VRay lighting into a secondary UV channel to get around some Unity lightmap limitations for mobile"
+		]
+	},
+	{
+    		"toolName": "Android Studio",
+    		"work": [
+        		"Integrating native C and C++ libraries into apps via JNI",
+        		"Built frameworks to interact and send data to desktop Unreal instances",
+        		"Rapid prototyping"
+    		]
+	},
+	{
+		"toolName": "Photoshop",
+		"work": [
+			"Terrible programmer art",
+			"Expanded Shotgrid's Photoshop toolset",
+			"General scripting in Javascript"
+		]
+	},
+	{
+		"toolName": "Perforce",
+		"work": [
+			"Run and administer Perfoce servers on my homelab",
+			"Developed perforce automatization with p4python",
+			"Created a Shotgrid config that replaces a studio's centralized filesystem with versions inside Perforce to get rid of needing to use a vpn for remote workers"
+		]
+	},
+	{
+		"toolName": "Stereolabs",
+		"work": [
+			"Used Zed 2 Cameras to track foam balls being thrown to be passed to Unreal Engine",
+			"Worked with Stereolab's 6DoF pose for stereoscopic SLAM tracking",
+			"Worked with Stereolab's BODY_FORMAT::BODY_34 pose tracking to build a simplified mocap system"
+		]
+	},
+	{
+		"toolName": "Shotgrid",
+		"work": [
+			"Built a Shotgrid config that makes use of a Perforce server in lieu of a centralized Studio shared network drive",
+			"Spent far too much time writing plugins for Shotgrid's ShotgirdEventDaemon",
+			"Slowly began the process of converting those plugins from the event daemon into Webhooks",
+			"Created expanded Maya plugin tool/UI that allowed for the creation and publishing of screenshots, custom turntables, and playblasts to Shotgrid",
+			"REST API integration into Unity",
+			"Rest API integration into Unreal",
+			"Created far too many sgtk-configs",
+			"Set up a linux server hosting all Shotgrid autonomization studio wide"
+		]
+	}
+	]
+}

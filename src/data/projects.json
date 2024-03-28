@@ -8,7 +8,7 @@
 			"Built a system for synconizing player reticle and shot data as nDisplay events across all connected nDisplay nodes",
 			"Helped solve the myriad of gameplay bugs existing in the project when I joined",
 			"Set up a functional testing framework plugin that would have been far more useful before they started development",
-			"Created a system to deproject from real world screen space to 3D world space that took into account the nDisplay vertex shaders and phyically curved screens",
+			"Created a system to deproject from real world screen space to 3D world space that took into account nDisplay's vertex shaders and phyically curved screens",
 			"Built tools to tune this deprojection on site given that there was a disconnect between real world measurements and the 3D representation in game"
 		]
 	},
@@ -98,6 +98,17 @@
 			"Helped build the level streaming setup for moving through large maps",
 			"Art integration like developing animation blueprints for actors",
 			"Wrote the easter eggs that could be triggered throughout the ride"
+		]
+	},
+	{
+		"projectName": "Batman Bat-Tech Edition mobile",
+		"mediaType": "youtube",
+		"mediaLink": "https://www.youtube.com/embed/HhWHmGEq30Y",
+		"work": [
+			"Built enviornmental sets in Maya",
+			"Baked all the lighting in Maya using VRay",
+			"Built a system to create atlas of monolithic enviornment textures",
+			"Used the generated lightmap atlas to replace Unity lightmaps using a secondary UV channel"
 		]
 	}
 	]

@@ -28,7 +28,7 @@ class Skillset extends Component {
     const currentToolData = toolData.tools[this.state.index]
 
     return (
-      <div className="skillset" id="component">
+      <div className="component" id="skillset">
         {isModalOpen ?
         
           <SmallModal onClose={() => this.setState({ isModalOpen: false })}>

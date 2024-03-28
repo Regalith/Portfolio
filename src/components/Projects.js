@@ -70,6 +70,9 @@ class Projects extends Component {
                 <div className="max-w-72 max-h-32 transform transition duration-500 hover:scale-125 hover:outline hover:z-30 flex justify-center items-center">
                     <img src={process.env.PUBLIC_URL + "/images/PvZ.png"} onClick={() => imageClick(7)} alt="PvZ"/>
                 </div>
+                <div className="max-w-72 max-h-32 transform transition duration-500 hover:scale-125 hover:outline hover:z-30 flex justify-center items-center">
+                    <img src={process.env.PUBLIC_URL + "/images/BatTech.png"} onClick={() => imageClick(8)} alt="BatTech"/>
+                </div>
 
             </div>
           </div>

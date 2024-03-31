@@ -1,17 +1,18 @@
 import React, { Component } from "react";
-
+import "./Contact.css";
 class Contact extends Component {
   render() {
     return (
-      <div>
-        <h3>SPA App - Contact</h3>
-        <p>Please feel free to contact us with any questions or inquiries you may have. We are always happy to help!</p>
-        <h4>Contact Details:</h4>
-        <ul>
-        <li><strong>Email:</strong> info@example.com</li>
-        <li><strong>Phone:</strong> 1-800-555-1234</li>
-        <li><strong>Address:</strong> 123 Main St, Anytown USA</li>
-        </ul>
+      <div className="about" id="about">
+        <h1 className="aboutTitle"> Contact </h1>
+          <div className="flex items-center justify-center space-x-8">
+            <a href="https://www.linkedin.com/in/tim-bujnevicie-00b34866/" >
+              <img className="imageLink" src={process.env.PUBLIC_URL + "/images/LinkedIn.png"}/>
+            </a>
+            <a href="mailto:tbujnevicie@gmail.com">
+              <img className="imageLink" src={process.env.PUBLIC_URL + "/images/Email.png"}/>
+            </a>
+          </div>
       </div>
     );
   }

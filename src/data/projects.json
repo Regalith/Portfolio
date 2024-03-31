@@ -19,7 +19,7 @@
 		"work": [
 			"Wrote the underlying framework that the game was built upon along with a decent amount of integration and gameplay",
 			"Created a system using nDisplay to handle off-axis projection of the cameras entirely inside nDisplay",
-			"Synced up the disconnect between nDisplay's rendering output and needed engine functions that were still using the unmodified camera data",
+			"Synced up the disconnect between nDisplay's rendering output and needed engine functions that were still using the unmodified camera projection data",
 			"Setup nDisplay configs to load from files to allow for camera tuning on site",
 			"Converted the Alterface module I wrote to an Unreal Plugin to make it easier to move between projects",
 			"Built a hierarchy of sound classes that could be dynamically modified live on site for sound balancing via an in-game menu and json files",
@@ -44,9 +44,11 @@
 		"mediaType": "youtube",
 		"mediaLink": "https://www.youtube.com/embed/xvegQc7lIeM",
 		"work": [
-			"Developed all gameplay and integrated all art assets and animations except for materials",
+			"Wrote and integrated everything besides lighting and materials for the project",
+			"Developed all gameplay logic",
+			"Integrated all animations exported from maya as animation blueprints",
 			"Tested out Nvidia-Flex for fluid simulation",
-			"Couldn’t get around memory leakage tied to it after 5 hours of continuous gameplay with Flex, so had to switch to getting creative with skinned and animated meshes",
+			"Couldn’t get around memory leakage tied to it after 5 hours of continuous gameplay with Flex, so had to switch to getting creative with animated meshes to mimic water",
 			"Updated the Alterface module I wrote for Unreal 4.20",
 			"Installed on site and tuned everything there"
 		]
@@ -109,6 +111,16 @@
 			"Baked all the lighting in Maya using VRay",
 			"Built a system to create atlas of monolithic enviornment textures",
 			"Used the generated lightmap atlas to replace Unity lightmaps using a secondary UV channel"
+		]
+	},
+	{
+		"projectName": "Treasure Hunt",
+		"mediaType": "youtube",
+		"mediaLink": "https://www.youtube.com/embed/rDVR9Lie9zc",
+		"work": [
+			"Wrote the underlying framework for the entire project",
+			"Updated the shooting system I wrote to include burst fire powerups",
+			"Updated the Alterface Unreal plugin I wrote to work with a Unreal 5.0"
 		]
 	}
 	]

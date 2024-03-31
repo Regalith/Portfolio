@@ -1,0 +1,17 @@
+.contact{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	padding: 100px 20px;
+}
+
+.contectTitle{
+	text-align: center;
+	font-size: 60px;
+}
+
+.imageLink {
+	width:128px;
+	height:128px;
+}

@@ -32,7 +32,7 @@ const styles = {
     padding: '20px',
     borderRadius: '8px',
     position: 'relative',
-    width: '40%',
+    width: '30%',
     maxWidth: '100%'
   },
   closeButton: {

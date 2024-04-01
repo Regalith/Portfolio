@@ -76,7 +76,6 @@ class Projects extends Component {
                 <div className="max-w-72 max-h-32 transform transition duration-500 hover:scale-125 hover:outline hover:z-30 flex justify-center items-center">
                     <img src={process.env.PUBLIC_URL + "/images/TreasureHunt.png"} onClick={() => imageClick(9)} alt="TreasureHunt"/>
                 </div>
-
             </div>
           </div>
       </div>

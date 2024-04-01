@@ -30,7 +30,7 @@ const styles = {
     padding: '20px',
     borderRadius: '8px',
     position: 'relative',
-    width: '80%',
+    width: '60%',
     maxWidth: '100%'
   },
   smallModal: {
@@ -47,8 +47,10 @@ const styles = {
     right: '10px',
     background: 'transparent',
     border: 'none',
-    fontSize: '18px',
-    cursor: 'pointer'
+    fontSize: '20px',
+    cursor: 'pointer',
+    color: 'black',
+    fontWeight: 'bold'
   }
 };
 

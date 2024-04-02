@@ -77,6 +77,17 @@ class Projects extends Component {
                     <img src={process.env.PUBLIC_URL + "/images/TreasureHunt.png"} onClick={() => imageClick(9)} alt="TreasureHunt"/>
                 </div>
             </div>
+
+            <h1 className="smallerProjectsTitle"> Miscellaneous Projects </h1>
+            <div className="smallProjectsContainer">
+               <ul className="languageUL">
+                <li className="languageUL"> Integrated ORB SLAM3 into Unreal via a plugin for a pixel streaming thin client to get around ARCore limitations</li>
+                <li className="languageUL"> Created a system for tracking thrown foam balls via stereoscopic cameras to drive Unreal gameplay (Zed)</li>
+                <li className="languageUL"> Built a system inside Unreal for compositing Unreal scenes into real life 360 video captures</li>
+                <li className="languageUL"> Using a combination of Nvidia Hairworks, Nvidia Ansel, and Unreal to create 360 stereoscopic videos of photorealistic animal</li>
+                <li className="languageUL"> Built a Shotgrid implementation that removes the need for a shared studio network drive by replacing it with Perforce </li>
+              </ul>
+            </div>
           </div>
       </div>
     );

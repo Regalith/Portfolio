@@ -6,7 +6,7 @@ class Contact extends Component {
       <div className="about" id="about">
         <h1 className="aboutTitle"> Contact </h1>
           <div className="flex items-center justify-center space-x-8">
-            <a href="https://www.linkedin.com/in/tim-bujnevicie-00b34866/" >
+            <a href="https://www.linkedin.com/in/tbujnevicie/" >
               <img className="imageLink" src={process.env.PUBLIC_URL + "/images/LinkedIn.png"}/>
             </a>
             <a href="mailto:tbujnevicie@gmail.com">

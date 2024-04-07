@@ -1,4 +1,5 @@
 import React from "react";
+import PDF from '../data/tbujnevicie.pdf';
 
 function Navbar() {
 return (
@@ -15,6 +16,9 @@ return (
           </a>
           <a href="#skillset" className="mr-5 hover:text-white">
             Skillset
+          </a>
+          <a href={PDF} className="mr-5 hover:text-white" target="_blank">
+            Resume
           </a>
           <a href="#projects" className="mr-5 hover:text-white">
             Projects

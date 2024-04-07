@@ -23,7 +23,7 @@ return (
           <a href="#projects" className="mr-5 hover:text-white">
             Projects
           </a>
-          <a href="#projects" className="mr-5 hover:text-white">
+          <a href="#contact" className="mr-5 hover:text-white">
             Contact Me
           </a>
         </nav>

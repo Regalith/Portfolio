@@ -1,5 +1,5 @@
 import React from "react";
-import PDF from '../data/tbujnevicie.pdf';
+import PDF from '../images/tbujnevicie.pdf';
 
 function Navbar() {
 return (

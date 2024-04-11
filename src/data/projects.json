@@ -8,7 +8,7 @@
 			"Built a system for synchronizing player reticle and shot data as nDisplay events across all connected nDisplay nodes",
 			"Helped solve the myriad of gameplay bugs existing in the project when I joined",
 			"Set up a functional testing framework plugin that would have been far more useful before they started development",
-			"Created a system to deproject from real world screen space to 3D world space that took into account nDisplay's vertex shaders and physically curved screens",
+			"Created a system to deproject from real world screen space to 3D game space that took into account nDisplay's vertex shaders and physically curved screens",
 			"Built tools to tune this deprojection on site given that there was a disconnect between real world measurements and the 3D representation in game"
 		]
 	},

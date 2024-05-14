@@ -30,8 +30,7 @@ const styles = {
     padding: '20px',
     borderRadius: '8px',
     position: 'relative',
-    width: '60%',
-    maxWidth: '100%'
+    width: '1200px'
   },
   smallModal: {
     backgroundColor: 'white',

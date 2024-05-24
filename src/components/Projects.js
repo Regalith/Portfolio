@@ -37,11 +37,6 @@ class Projects extends Component {
                             <h3 className="center-text text-3xl font-bold text-gray-950">
                                 {currentProjectData.projectName}
                             </h3>
-                            <button
-                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-3 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                            onClick={() => this.setState({ isModalOpen: false })}>
-                                X
-                            </button>
                         </div>
                         <div className="relative p-6 flex-auto text-gray-800">
                             <div className="grid gap-4 lg:grid-cols-2 items-center">
@@ -81,6 +76,12 @@ class Projects extends Component {
                                     <li>&#8226; {currentElement}</li>
                                 ))}
                                 </ul>
+
+                                <button
+                                className="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-slate-600 border border-transparent rounded-md shadow-sm close-modal hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 sm:text-sm"
+                                onClick={() => this.setState({ isModalOpen: false })}>
+                                    Close
+                                </button>
                             </div>
                         </div>
                     </div>

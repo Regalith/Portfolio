@@ -76,13 +76,12 @@ class Projects extends Component {
                                     <li>&#8226; {currentElement}</li>
                                 ))}
                                 </ul>
-
-                                <button
-                                className="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-slate-600 border border-transparent rounded-md shadow-sm close-modal hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 sm:text-sm"
+                            </div>
+                            <button
+                                className="inline-flex mt-8 justify-center w-full px-4 py-2 text-base font-medium text-white bg-slate-600 border border-transparent rounded-md shadow-sm close-modal hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 sm:text-sm"
                                 onClick={() => this.setState({ isModalOpen: false })}>
                                     Close
-                                </button>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -27,25 +27,71 @@ class Projects extends Component {
     const currentProjectData = projectData.projects[this.state.index]
 
     return (
-      <div>
-          
-        {isModalOpen ?
-        
-          <Modal onClose={() => this.setState({ isModalOpen: false })}>
-            <ProjectInfo
-              projectName={currentProjectData.projectName}
-              mediaType={currentProjectData.mediaType}
-              mediaLink={currentProjectData.mediaLink}
-              work={currentProjectData.work}
-            />
-          </Modal>
-          :
-          <div/>
-        }
+        <div className="w-3/5 mx-auto mt-10 justify-center items-center" id="projects">
+        {isModalOpen  ? (
+        <>
+            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                        <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                            <h3 className="center-text text-3xl font-bold text-gray-950">
+                                {currentProjectData.projectName}
+                            </h3>
+                            <button
+                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-3 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                            onClick={() => this.setState({ isModalOpen: false })}>
+                                X
+                            </button>
+                        </div>
+                        <div className="relative p-6 flex-auto text-gray-800">
+                            <div className="grid gap-4 lg:grid-cols-2 items-center">
+                                { currentProjectData.mediaType === "youtube" ? 
+                                (
+                                    <div className=' aspect-video ' >
+                                        <iframe 
+                                            className=' h-full w-full rounded-lg'
+                                            src={currentProjectData.mediaLink} 
+                                            width="100%" 
+                                            title="YouTube video player" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> 
+                                         </iframe>
+                                    </div>
+                                ) : null}
+                                { currentProjectData.mediaType === "video" ? 
+                                (
+                                    <video width="800" height="480" controls >
+                                        <source src="/videos/Wonderwoman.mp4" type='video/mp4' />
+                                </video>
+                                ) : null}
+                                { currentProjectData.mediaType === "text" ? 
+                                (
+                                   <div className="w-auto">
+                                    {currentProjectData.mediaLink}
+                                    </div>
+                                ) : null}
+                                { currentProjectData.mediaType === "image" ? 
+                                (
+                                    <img className="w-auto" src={currentProjectData.mediaLink}/>
+                                ) : null}
 
-          <div className="projects" id="projects">
-            <h1 className="projectsTitle"> Projects </h1>
-            <div className="grid grid-cols-4 gap-4">
+                                <ul>
+
+                                { currentProjectData.work.map(currentElement => (
+                                    <li>&#8226; {currentElement}</li>
+                                ))}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        </>
+      ) : null}
+
+            <h1 className="text-center text-3xl mb-4"> Projects </h1>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-8">
                 <div className="max-w-72 max-h-32 transform transition duration-500 hover:scale-125 hover:outline hover:z-30 flex justify-center items-center">
                     <img src={process.env.PUBLIC_URL + "/images/Minions.png"} onClick={() => imageClick(0)} alt="Minions"/>
                 </div>
@@ -88,7 +134,6 @@ class Projects extends Component {
                 <li className="languageUL"> Built a Shotgrid implementation that removes the need for a shared studio network drive by replacing it with Perforce </li>
               </ul>
             </div>
-          </div>
       </div>
     );
   }
